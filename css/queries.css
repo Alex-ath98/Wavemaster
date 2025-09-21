@@ -268,6 +268,11 @@
     grid-template-columns: 1fr;
   }
 
+  /*Βγάζει το padding που μικραίνει το gallery*/
+  .section-gallery .container:nth-child(2) {
+    padding: 0;
+  }
+
   .main-text-box {
     grid-row: 2;
   }
