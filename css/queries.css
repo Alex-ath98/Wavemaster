@@ -1,0 +1,374 @@
+/*Ξεκινά να βλέπεις που έχεις line-break και κάνε τις απαραιτήτες ενέργειες 
+μην πειράξεις κάτι που δεν χαλάει*/
+
+/*STANDARD SIZES: 1400,1200,900,700,600*/
+
+/*LAPTOPS below 1440*/
+
+@media (max-width: 90em) {
+  .heading-primary {
+    font-size: 4.4rem;
+  }
+
+  .heading-secondary {
+    font-size: 3rem;
+  }
+
+  .heading-teritary {
+    font-size: 2.4rem;
+  }
+}
+
+/*Tablets  Landscape below 1320*/
+@media (max-width: 83em) {
+  html {
+    font-size: 56.25%;
+  }
+
+  .hero-box {
+    /*Θέλω padding μόνο δεξιά και αριστερά*/
+    padding: 0 3.2rem;
+  }
+
+  .section-cta {
+    padding: 9.6rem 4.8rem;
+  }
+
+  .color {
+    height: 3.2rem;
+    width: 3.2rem;
+  }
+}
+
+/*Small screens 1174*/
+@media (max-width: 74em) {
+  html {
+    font-size: 50%;
+  }
+
+  .main-header {
+    border-radius: 0;
+  }
+
+  /*Κράτα μόνο το padding-bottom*/
+  .section-hero {
+    padding: 0 0 9.6rem 0;
+  }
+}
+
+/*Tablets protrait BELOW 972px*/
+
+@media (max-width: 61em) {
+  .nav-btn {
+    /*Θες να κάνει overlap το .main-nav*/
+    z-index: 999;
+    display: block;
+  }
+
+  .logo-nav {
+    display: block;
+    height: 5.2rem;
+  }
+
+  .nav-link.main-nav-cta:link,
+  .nav-link.main-nav-cta:visited,
+  .nav-link.cart:link,
+  .nav-link.cart:visited {
+    padding: 2.4rem;
+  }
+
+  .hero-box {
+    width: auto;
+    text-align: center;
+    padding: 4.8rem;
+  }
+
+  .hero-content {
+    width: 100%;
+  }
+
+  .main-nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /*Να έχει ελαφριά σκιά από πίσω*/
+    box-shadow: 0 1.2rem 3.2rem rgba(0, 0, 0, 0.03);
+
+    /* From https://css.glass */
+    background: rgba(51, 51, 51, 0.95);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    flex-direction: column;
+    gap: 4.8rem;
+    font-size: 3rem;
+    font-weight: 700;
+    visibility: hidden;
+    pointer-events: none;
+    opacity: 0;
+    transform: translateX(100%);
+    transition: all 0.4s ease-in;
+    /*Παντά αλλιώς θα γίνεται overlap*/
+    z-index: 900;
+  }
+
+  .nav-open .main-nav {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+    transform: translateX(0);
+  }
+
+  .nav-list {
+    display: flex;
+    flex-direction: column;
+    /*Απόσταση μεταξύ των links*/
+    gap: 6.4rem;
+  }
+
+  .nav-link:link,
+  .nav-link:visited {
+    font-size: 3rem;
+  }
+
+  .nav-open .menu-icon[name="close-outline"] {
+    display: block;
+  }
+
+  .nav-open .menu-icon[name="reorder-four-outline"] {
+    display: none;
+  }
+
+  .product-colors {
+    gap: 2.4rem;
+  }
+
+  .size-description {
+    font-size: 2rem;
+  }
+
+  .section-gallery .container:first-child {
+    margin: 0 3.2rem 4.8rem 3.2rem;
+  }
+
+  .section-gallery .container {
+    text-align: center;
+  }
+
+  .step-title {
+    font-size: 2.4rem;
+  }
+
+  .section-cta {
+    grid-template-columns: 1fr;
+  }
+
+  .cta-img-box {
+    width: 50%;
+    justify-self: center;
+  }
+
+  .color-size {
+    justify-content: center;
+  }
+
+  .price-cart {
+    margin: 9.6rem auto 0 auto;
+    width: 70%;
+  }
+
+  .grid--3-cols {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .grid--footer {
+    grid-template-columns: repeat(6, 1fr);
+  }
+
+  .news-col {
+    /*Overide to fixed width*/
+    width: auto;
+  }
+
+  .logo-col,
+  .nav-col {
+    justify-self: center;
+  }
+
+  .logo-col,
+  .news-col {
+    grid-column: span 3;
+  }
+
+  /*Πήγαινε κάτω στην 2η σειρά*/
+  .nav-col {
+    grid-row: 2;
+    grid-column: span 2;
+  }
+
+  .footer {
+    padding: 9.6rem 3.2rem;
+  }
+}
+
+/*FOR SCREENS BELOW 820px Smaller tablets*/
+
+@media (max-width: 51em) {
+  .step-text-box:nth-child(2) {
+    grid-row: 1;
+  }
+
+  .step-text-box:nth-child(4) {
+    grid-row: 3;
+  }
+
+  .step-text-box:nth-child(6) {
+    grid-row: 5;
+  }
+
+  .step-text-box:nth-child(8) {
+    grid-row: 7;
+  }
+
+  .grid--2-cols {
+    grid-template-columns: 1fr;
+  }
+
+  .grid-main {
+    grid-template-columns: 1fr;
+    width: 70%;
+    justify-self: center;
+  }
+
+  /* .gallery-content {
+    grid-row: 1;
+  } */
+
+  .main-box {
+    width: 80%;
+    justify-self: center;
+    margin: 4.8rem;
+  }
+
+  .main-text {
+    font-size: 1.6rem;
+  }
+}
+
+/*FOR SCREENS BELOW 600PX Smartphones*/
+
+@media (max-width: 38em) {
+  .grid--3-cols {
+    grid-template-columns: 1fr;
+  }
+
+  .main-text-box {
+    grid-row: 2;
+  }
+
+  .heading-primary,
+  .heading-secondary,
+  .heading-teritary,
+  .subheading {
+    text-align: center;
+  }
+
+  .gallery-content {
+    padding: 2.2rem;
+  }
+
+  .cta-img-box {
+    justify-self: center;
+    width: 60%;
+  }
+
+  .color-size {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 4.8rem;
+    gap: 0;
+  }
+
+  .section-cta {
+    padding: 9.6rem 3.2rem;
+  }
+
+  .price-cart {
+    margin: 9.6rem auto;
+    width: 90%;
+  }
+
+  .cta-text-box.container {
+    padding: 0;
+  }
+
+  .news-col {
+    grid-column: span 6;
+  }
+
+  /* .nav-col {
+    grid-row: 3;
+  } */
+
+  .gallery-content {
+    padding: 1.8rem;
+  }
+
+  .btns-hero {
+    display: flex;
+    flex-direction: column;
+    gap: 4.8rem;
+    align-items: center;
+  }
+
+  /*Δεν θα το πειράξεις αυτό καθώς το θέμα είναι με το fixed-width στο .hero-box 
+  
+  .hero-content {
+    width: 60%;
+  } */
+
+  .hero-box {
+    /*Μην δώσεις fixed-size βάλε το auto να γίνεται αυτόματα ο χώρος που χρειάζεται*/
+    width: auto;
+    /*Θέλω padding μόνο δεξιά και αριστερά*/
+    padding: 0 2.4rem;
+  }
+
+  /*Κράτα μόνο το padding-bottom*/
+  .section-hero {
+    padding: 0 0 9.6rem 0;
+  }
+
+  .hero-content {
+    width: 100%;
+  }
+
+  .hero-text {
+    text-align: center;
+  }
+
+  .testimonial,
+  .feature {
+    width: 60%;
+    justify-self: center;
+  }
+}
+
+/*Extra small Screens below 440px*/
+@media (max-width: 28em) {
+  .testimonial,
+  .feature {
+    width: 100%;
+    justify-self: center;
+  }
+
+  .footer-copy {
+    font-size: 1.6rem;
+  }
+}

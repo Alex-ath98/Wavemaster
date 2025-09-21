@@ -1,0 +1,743 @@
+.section-hero {
+  background-image: linear-gradient(
+      rgba(34, 34, 34, 0.6),
+      rgba(34, 34, 34, 0.6)
+    ),
+    url(../imgs/Wave-masters-hero.jpg);
+  background-size: cover;
+  background-position: center;
+  /*Κενό για το header*/
+  padding: 3.2rem 3.2rem 9.6rem 3.2rem;
+}
+
+/*Για να μην έχεις θέματα στα viewport κράτα τα nav-links σε standard μέγεθη όπως 1.8rem*/
+.nav-link:link,
+.nav-link:visited {
+  display: inline-block;
+  font-size: 1.8rem;
+  color: #37b24d;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.3s;
+}
+
+.nav-link:hover,
+.nav-link:active {
+  color: #69db7c;
+}
+
+/*Higher speceficity κάνει overide τα προηγούμενα style declerations από το .nav-link όπως το color:*/
+.nav-link.main-nav-cta:link,
+.nav-link.main-nav-cta:visited {
+  background-color: #226e32;
+  color: #fff;
+}
+
+.nav-link.main-nav-cta:link,
+.nav-link.main-nav-cta:visited,
+.nav-link.cart:link,
+.nav-link.cart:visited {
+  padding: 1.4rem;
+  transition: all 0.3s;
+  border-top-left-radius: 2rem;
+  border-bottom-right-radius: 2rem;
+}
+
+.nav-link.main-nav-cta:hover,
+.nav-link.main-nav-cta:active {
+  background-color: #37b24d;
+  box-shadow: 0 0 1.2rem 0.6rem #69db7c;
+}
+
+.nav-link.cart:link,
+.nav-link.cart:visited {
+  display: inline-flex;
+  color: #fff;
+  background-color: #c24700;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.nav-link.cart:hover,
+.nav-link.cart:active {
+  box-shadow: inset 0 0 0 0.4rem #fff;
+}
+
+.logo {
+  height: 3.2rem;
+}
+
+.main-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 3.2rem;
+  height: 9.6rem;
+  /*Αν βάλεις backdrop filter θα χαλάσει όλο το mobile-navigation και 
+  θα είναι διάφανο με overlap τα icons*/
+  background-color: rgba(51, 51, 51, 0.5);
+  border-radius: 9px;
+  position: relative;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  gap: 4rem;
+  align-items: center;
+}
+
+.hero-text {
+  color: #fff;
+  font-size: 2rem;
+  line-height: 1.8;
+  margin-bottom: 4.8rem;
+}
+
+.hero-box {
+  width: 120rem;
+  margin: 0 auto;
+  /*Απόσταση από το header*/
+  margin-top: 9.6rem;
+}
+
+.hero-content {
+  width: 50%;
+}
+
+.btn-icon {
+  height: 2.4rem;
+  width: 2.4rem;
+  /*Υπάρχει deafult margin στο ion-icon*/
+  margin: 0;
+}
+
+/*Steps-section*/
+
+.section-steps {
+  padding: 9.6rem 0;
+}
+
+.step-icon {
+  height: 8rem;
+  width: 8rem;
+  padding: 3.2rem;
+  background: none;
+  border-radius: 50%;
+  border: 1px solid #b04405;
+  color: #2b8a3e;
+}
+
+.icon-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.step-text {
+  font-size: 1.8rem;
+  line-height: 1.8;
+}
+
+.step-title {
+  font-size: 3rem;
+  color: #226e32;
+  margin-bottom: 1.8rem;
+  font-weight: 500;
+}
+
+.step-title span {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  border: 1px solid #fb6107;
+  height: 4rem;
+  width: 4rem;
+  padding: 2.4rem;
+  margin-right: 1.8rem;
+}
+
+/*Section-Gallery*/
+
+.section-gallery {
+  padding: 9.6rem 0;
+  background-image: url(../imgs/Testimonials-Background-Water-drops.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.main-content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 4.8rem;
+}
+
+.grid-main {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  gap: 0;
+  border-radius: 9px;
+  background-color: #226e32;
+}
+
+.gallery-features {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-content: center;
+  align-items: center;
+  gap: 1.6rem;
+}
+
+.gallery-content {
+  padding: 4.8rem;
+  background-color: #333;
+  gap: 4.8rem;
+}
+
+.gallery-item img {
+  width: 100%;
+  display: block;
+  /*Το original state της φωτογραφίας*/
+  transition: all 0.3s;
+}
+
+.gallery-item img:hover {
+  transform: scale(1.2);
+}
+
+/*Δεν βάζεις ποτέ το border στην ίδια στην φωτογραφία αλλά
+στο container της*/
+.gallery-item {
+  cursor: pointer;
+  /*Ότι βγει εξώ από το figure μην το 
+  δείξεις*/
+  overflow: hidden;
+  border: 2px solid #b04405;
+  border-radius: 9px;
+}
+
+.main-box img {
+  width: 100%;
+  /* Γι αυτό στο μακρυνε την φωτογραφία margin-bottom: 4.8rem; */
+}
+
+.main-box {
+  border: 2px solid #b04405;
+  border-radius: 9px;
+  overflow: hidden;
+  background-color: #333;
+  margin: 0 3.2rem;
+}
+
+.main-text {
+  font-size: 1.8rem;
+  line-height: 1.8;
+  color: #fff;
+}
+
+.section-gallery .container:first-child {
+  background-image: linear-gradient(
+    rgba(39, 39, 39, 0.3),
+    rgba(18, 18, 18, 0.3)
+  );
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(72, 72, 72, 0.3);
+  border-radius: 9px;
+  padding: 1.6rem;
+  margin-bottom: 4.8rem;
+}
+
+.section-gallery .heading-secondary {
+  margin-bottom: 1.6rem;
+}
+
+/*Animation*/
+
+#mainImage {
+  transition: opacity 0.4s ease-in-out;
+  opacity: 1;
+}
+
+#mainImage.fade-out {
+  opacity: 0;
+}
+
+/*Testimonial*/
+
+.testimonial {
+  /* From https://css.glass */
+  background-image: linear-gradient(
+    rgba(32, 33, 32, 0.3),
+    rgba(32, 33, 32, 0.3)
+  );
+  /* box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); */
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(72, 72, 72, 0.3);
+  border-radius: 9px;
+  text-align: center;
+  padding: 1.6rem;
+  /* cursor: pointer; */
+  transition: all 0.3s;
+}
+
+.testimonial:hover {
+  /*box-shadow αν θες να πιάνει όλη την περίμετρο έτσι 
+  θα το κάνεις*/
+  box-shadow: 0 0 2.4rem 1.2rem #69db7c;
+  transform: translateY(-1.2rem);
+}
+
+.testimonial img {
+  height: 8rem;
+  width: 8rem;
+  border-radius: 50%;
+  margin-bottom: 1.6rem;
+  text-align: center;
+  /* From https://css.glass */
+  border: 1px solid rgba(72, 72, 72, 0.3);
+  padding: 0.3rem;
+}
+
+.testimonial-text {
+  font-size: 1.6rem;
+  line-height: 1.8;
+  color: #fff;
+  margin-bottom: 1.2rem;
+}
+
+.testimonial-review {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  margin-bottom: 1.4rem;
+}
+
+.testimonial-icon {
+  height: 3.2rem;
+  width: 3.2rem;
+  color: #fb6107;
+}
+
+.testimonial-author {
+  font-size: 1.4rem;
+  color: #fff;
+  margin-bottom: 1.4rem;
+}
+
+.testimonial-job {
+  font-size: 1.2rem;
+  color: #fb6107;
+}
+
+/*Section-cta*/
+
+.section-cta {
+  padding: 9.6rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  gap: 6.4rem;
+}
+
+.cta-img {
+  width: 100%;
+}
+
+.cta-text {
+  font-size: 1.8rem;
+  line-height: 1.8;
+  margin-bottom: 4.8rem;
+}
+
+.list-title {
+  font-size: 2.4rem;
+  font-weight: 600;
+  margin-bottom: 3.2rem;
+}
+
+.list {
+  font-size: 1.6rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+  list-style: none;
+}
+
+.list-icon {
+  height: 2.4rem;
+  width: 2.4rem;
+  color: #226e32;
+}
+
+.list-item {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+#cta-main {
+  border: 2px solid #fb6107;
+  transition: opacity 0.5s ease;
+}
+
+.color-title {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 2.4rem;
+}
+
+.color-size {
+  display: flex;
+  gap: 12.8rem;
+}
+
+.size-title,
+.size-description {
+  font-size: 1.8rem;
+  color: #333;
+}
+
+.size-title {
+  font-weight: 600;
+  margin-bottom: 1.6rem;
+}
+
+.product-colors {
+  display: flex;
+  gap: 1.6rem;
+  align-items: center;
+  margin-bottom: 4.8rem;
+}
+
+.color {
+  background-color: #000;
+  height: 2.4rem;
+  width: 2.4rem;
+  border-radius: 50%;
+  border: 2px solid #000;
+  cursor: pointer;
+}
+
+.color.active {
+  outline: 5px solid #69db7c; /* ή όποιο border/outline θες */
+  transform: scale(1.1); /* μικρή μεγέθυνση για εφέ */
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.color-green {
+  background-color: #2b8a3e;
+}
+
+.color-white {
+  background-color: #f6f6f6;
+}
+
+.color-blue {
+  background-color: blue;
+}
+
+.color-red {
+  background-color: red;
+}
+
+.color-orange {
+  background-color: orange;
+}
+
+.price-cart {
+  display: flex;
+  align-items: center;
+  margin-top: 4.8rem;
+  width: 90%;
+  text-align: center;
+  border: 1px solid #333;
+}
+
+.btn {
+  background: none;
+  border: none;
+  font-size: 1.8rem;
+  padding: 2.4rem;
+  font-weight: 600;
+  font-size: 2.4rem;
+}
+
+.btn--price {
+  background-color: #f6f6f6;
+  flex: 0 1 15rem;
+}
+
+.btn--cart {
+  flex: 1 0 auto;
+  background-color: #226e32;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.btn--cart:hover {
+  background-color: #37b24d;
+  box-shadow: 0 0 2.4rem 0.6rem #69db7c;
+  transform: translateY(-1.2rem);
+}
+
+.cta-icon {
+  height: 3.2rem;
+  width: 3.2rem;
+  color: #fff;
+}
+
+/*Section Features*/
+
+.section-features {
+  padding: 9.6rem 0 12.8rem 0;
+}
+
+.feature-title {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #226e32;
+  margin-bottom: 1.8rem;
+}
+
+.feature {
+  text-align: center;
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
+  padding: 3.2rem;
+  transition: all 0.4s;
+  border-radius: 9px;
+  /* cursor: pointer; */
+}
+
+.feature:hover {
+  box-shadow: 0 3.2rem 6.4rem rgba(0, 0, 0, 0.06);
+  transform: translateY(-1.2rem);
+}
+
+.feature-text {
+  font-size: 1.6rem;
+  line-height: 1.8;
+}
+
+.feature-icon {
+  height: 4.8rem;
+  width: 4.8rem;
+  color: #226e32;
+  margin-bottom: 1.6rem;
+}
+
+/*Footer*/
+
+.footer {
+  background-color: #333;
+  padding: 9.6rem 0;
+  color: #fff;
+}
+
+.grid--footer {
+  grid-template-columns: 2fr 1.5fr 1.5fr 1.5fr 2fr;
+}
+
+/* .news-col,
+.logo-col {
+  grid-column: span 3;
+} */
+
+/* .footer-logo {
+  display: inline-block;
+  margin-bottom: 4.8rem;
+} */
+
+.address {
+  font-size: 1.8rem;
+  line-height: 1.8;
+  font-style: normal;
+  margin-bottom: 1.8rem;
+}
+
+.address-info {
+  margin-bottom: 1.6rem;
+}
+
+/* .phone-num {
+  margin-bottom: 1.8rem;
+} */
+
+.footer-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
+}
+
+.col-title {
+  font-size: 2.4rem;
+  color: #37b24d;
+  font-weight: 600;
+  margin-bottom: 3.2rem;
+}
+/* 
+.nav-col {
+  justify-self: center;
+  text-align: center;
+} */
+
+.logo-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.address {
+  margin-top: auto;
+}
+
+.social-icon {
+  height: 2.4rem;
+  width: 2.4rem;
+}
+
+/*Κάνει flex ολόκληρο το link με το span και το icon*/
+#social-item {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.6rem;
+}
+
+.news-col {
+  /*Αν δεν βγαίνει ακριβώς το width του δίνεις fixed-size λόγο του content*/
+  width: 35rem;
+  padding: 1.6rem;
+  /* From https://css.glass */
+  background: rgba(51, 51, 51, 0.2);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.news {
+  position: relative;
+}
+
+.news-text {
+  font-size: 1.6rem;
+  line-height: 1.8;
+  margin-bottom: 3.2rem;
+}
+
+.newsletter input {
+  padding: 1.6rem;
+  border: none;
+  background-color: inherit;
+  padding-bottom: 2px;
+  margin-bottom: 3.2rem;
+  border-bottom: 3px solid #fb6107;
+}
+
+.newsletter input::placeholder {
+  font-size: 1.8rem;
+  color: #9f9d9d;
+}
+
+.btn-news {
+  display: block;
+  font-size: 1.6rem;
+  color: #fff;
+  background-color: #226e32;
+  font-weight: 600;
+  border-top-left-radius: 2rem;
+  border-bottom-right-radius: 2rem;
+  padding: 1.2rem;
+  transition: all 0.3s;
+  cursor: pointer;
+  border: none;
+}
+
+.btn-news:hover {
+  background-color: #37b24d;
+}
+
+.footer-copy {
+  border-top: 2px solid #fff;
+  padding-top: 3rem;
+  font-size: 1.8rem;
+  width: 100%;
+}
+
+/*NAVIGATION Below 1174px*/
+
+.nav-btn {
+  border: none;
+  background: none;
+  cursor: pointer;
+  display: none;
+}
+
+.nav-btn:hover {
+  color: #2b8a3e;
+}
+
+.menu-icon[name="close-outline"] {
+  display: none;
+}
+
+.menu-icon {
+  color: #fb6107;
+  height: 4.8rem;
+  width: 4.8rem;
+  border-radius: 50%;
+  border: 2px solid #fb6107;
+  padding: 0.6rem;
+}
+
+.logo-nav {
+  display: none;
+}
+
+/*STICKY NAVIGATION*/
+/*Βάλε το sticky στο body μέσω js και θα ισχυούν τα παρακάτω*/
+/*Να έχει αυτό το style μόνο το .main-header του sticky προστίθεται στο body μέσω JS*/
+.sticky .main-header {
+  /*Βγάζει το στοιχείο εκτός ροής παρομοίο με το position:absolute και το κολάει πάνω στο viweport
+  με αποτέλεσμα να χάνεται ο χώρος και η σελίδα να ξεκινάει με το .hero-section*/
+  position: fixed;
+  /*offset απλές τιμές 0 για πάνω και κάτω καθώς το fixed το βγάζει εκτός ροής σαν το absolute*/
+  top: 0;
+  bottom: 0;
+  /*Για να πιάνει όλο το πλάτος του viewport*/
+  width: 100%;
+  /*Διαφανό background-color παρόμοιο με το mobile-nav δεν θα βάλεις blur αλλιώς δεν θα δουλεύει το main-nav*/
+  background-image: linear-gradient(to top right, #555, #333);
+  box-shadow: 0 0 1.6rem 1.6rem #69db7c;
+  /*Για να προηγείται πάντα δίνεις μεγάλη τιμή για να μην καλύπτεται*/
+  z-index: 999;
+  /*Θα το μικρίνουμε γιατί παίρνει πολύ χώρο τελικά 
+  για 9.6rem fixed height είναι σημαντικό επίσης για την Javascript αν δεις το sticky*/
+  height: 8rem;
+  /*Δεν θέλουμε padding πάνω κάτω*/
+  padding-top: 0;
+  padding-bottom: 0;
+  /*Reset το border-radius στο header*/
+  border-radius: 0px;
+}
+
+.sticky .section-hero {
+  /*Για να αναπλήρωσεις το χάμενο ύψος που δημιουργήθηκε λόγο fixed position θα ισχύει μόνο το .hero-section του sticky που προστίθεται σαν class στο body λόγο JS*/
+
+  /*Φτιάχνει το jump που έκανε πριν επειδή έβαλες margin ισο με το fixed height του deafult main-header*/
+  margin-top: 9.6rem;
+  /*Διοθρώνει τα paddings*/
+  padding: 0;
+}

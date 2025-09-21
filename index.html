@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--SEO Description-->
+
+    <meta
+      name="description"
+      content="Welcome to Wavemaster, the brand redefining how we experience sound. With cutting-edge technology and inspiring design, we present our latest headphones powered by the revolutionary Vibrance Micro Sound chip. Pure sound, immersive experience."
+    />
+
+    <link href="css/general.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+    <link href="css/queries.css" rel="stylesheet" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Encode+Sans:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!--Javascript script που διορθώνει το scroll στο safari-->
+    <script
+      defer
+      src=" https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"
+    ></script>
+
+    <script defer src="js/script.js"></script>
+
+    <!--Εδώ θα μπουν τα icons-->
+    <!--Για να βάλεις το favicon 64x64 χρησιμοποίεις το στοιχείο link με την ιδιότητα rel="icon" και δεν βάζεις alt-text-->
+    <link rel="icon" href="imgs/favicon.png" />
+
+    <!--ICON 180x180 για favourite iOS αλλάζει απλά το rel-->
+
+    <link rel="apple-touch-icon" href="imgs/apple-touch-icon.png" />
+
+    <link rel="manifest" href="manifest.webmanifest" />
+
+    <!--ICON Android μέσω manifest script-->
+
+    <title>The sound &mdash; you deserve</title>
+  </head>
+  <body>
+    <main>
+      <section class="section-hero">
+        <header class="main-header">
+          <a href="#" class="logo-link">
+            <img
+              src="imgs/Logo.png"
+              alt="Wavemaster-logo"
+              class="logo"
+              alt="wavemaster-logo"
+            />
+          </a>
+          <nav class="main-nav">
+            <img src="imgs/Logo.png" alt="wavemaster-logo" class="logo-nav" />
+            <ul class="nav-list">
+              <li><a href="#steps" class="nav-link">Easy Setup</a></li>
+              <li><a href="#testimonials" class="nav-link">Testimonials</a></li>
+              <li><a href="#features" class="nav-link">Features</a></li>
+
+              <li><a href="#footer" class="nav-link">News Letter</a></li>
+              <li>
+                <a href="#cta" class="nav-link main-nav-cta">Make it yours</a>
+              </li>
+
+              <li>
+                <a href="cart.html" class="nav-link cart" target="_blank"
+                  ><span>Your Cart</span
+                  ><ion-icon name="cart" class="nav-icon"></ion-icon
+                ></a>
+              </li>
+            </ul>
+          </nav>
+          <button class="nav-btn" aria-label="navigation-button">
+            <ion-icon name="reorder-four-outline" class="menu-icon"></ion-icon>
+            <ion-icon name="close-outline" class="menu-icon"></ion-icon>
+          </button>
+        </header>
+
+        <div class="hero-box">
+          <div class="hero-content">
+            <h1 class="heading-primary">
+              Headphones with cutting-edge technology and inspiring design.
+            </h1>
+            <p class="hero-text">
+              The brand that redefining how we experience sound, we present our
+              latest headphones powered by the revolutionary with
+              <strong>Vibrance Micro Sound chip</strong>.
+            </p>
+            <div class="btns-hero">
+              <a href="#cta" class="btn btn-cta margin-right-sm">
+                <span>Start experiencing</span>
+                <ion-icon name="headset-outline" class="btn-icon"></ion-icon
+              ></a>
+              <a href="#features" class="btn btn-info"
+                ><span>Learn more</span>
+                <ion-icon
+                  name="volume-high-outline"
+                  class="btn-icon"
+                ></ion-icon>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-steps" id="steps">
+        <div class="container">
+          <span class="subheading">Easy setup</span>
+          <h2 class="heading-secondary">
+            Your High definition experience with 4 Simple steps.
+          </h2>
+        </div>
+
+        <!--Για να λειτουργήσει σωστά το grid πρέπει να είναι parent όλων των στοιχείων και όχι ενός
+      group στοιχείων ξεχωριστά-->
+        <div class="container grid grid--2-cols">
+          <div class="icon-box">
+            <ion-icon name="battery-charging" class="step-icon"></ion-icon>
+          </div>
+          <div class="step-text-box">
+            <p class="step-title"><span>1</span> Powerfull headphones.</p>
+            <p class="step-text">
+              To keep your headphones powered throughout the day, charge them
+              using the included USB-C cable. A full charge takes approximately
+              two hours.
+            </p>
+          </div>
+
+          <div class="icon-box">
+            <ion-icon name="bluetooth" class="step-icon"></ion-icon>
+          </div>
+
+          <div class="step-text-box">
+            <p class="step-title"><span>2</span>Bluetooth on your device.</p>
+            <p class="step-text">
+              Managing your audio experience is easy with the intuitive button
+              controls. With just a press, you can play or pause your music,
+              adjust the volume, skip tracks, or answer phone calls.
+            </p>
+          </div>
+
+          <div class="icon-box">
+            <ion-icon name="arrow-redo" class="step-icon"></ion-icon>
+          </div>
+
+          <div class="step-text-box">
+            <p class="step-title">
+              <span>3</span>Select <strong>Wavemaster VMS</strong>
+            </p>
+            <p class="step-text">
+              The Wavemaster VMS supports seamless multi-device pairing,
+              allowing you to switch between two Bluetooth-enabled devices
+              without needing to reconnect manually each time.
+            </p>
+          </div>
+
+          <div class="icon-box">
+            <ion-icon name="pulse" class="step-icon"></ion-icon>
+          </div>
+
+          <div class="step-text-box">
+            <p class="step-title"><span>4</span>Enjoy crystal-clear sound.</p>
+            <p class="step-text">
+              Experience audio the way it was meant to be heard. With
+              high-definition drivers and advanced noise isolation, the
+              Wavemaster VMS delivers crisp highs, rich mids, and deep bass for
+              a truly immersive listening experience.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="testimonials" class="section-gallery">
+        <div class="container">
+          <span class="subheading">Wavemaster presents</span>
+          <h2 class="heading-secondary">The magic is hidden in the details.</h2>
+        </div>
+        <div class="container">
+          <div class="grid grid-main">
+            <div class="main-box">
+              <img
+                id="mainImage"
+                src="imgs/gallery/WM-Front.jpg"
+                alt="wavemaster-headphones-front-view"
+              />
+            </div>
+
+            <div class="gallery-content grid">
+              <div class="main-text-box">
+                <h3 class="heading-teritary">Hear Sound Like Never Before.</h3>
+                <p class="main-text">
+                  Experience Sound Like Never Before Step into a new dimension
+                  of audio with Wavemasters Headphones – engineered with
+                  Vibrance &trade; Micro Sound Technology for ultra-precise,
+                  immersive sound.
+                </p>
+              </div>
+
+              <div class="gallery-features">
+                <figure class="gallery-item">
+                  <img
+                    class="thumb"
+                    src="imgs/gallery/WM-Front.jpg"
+                    alt="wavemaster-headphones-front-view"
+                  />
+                </figure>
+
+                <figure class="gallery-item">
+                  <img
+                    class="thumb"
+                    src="imgs/gallery/WM-Side.jpg"
+                    alt="wavemaster-headphones-side-view"
+                  />
+                </figure>
+
+                <figure class="gallery-item">
+                  <img
+                    class="thumb"
+                    src="imgs/gallery/WM-Super.jpg"
+                    alt="wavenaster-headphobes-in-space-background"
+                  />
+                </figure>
+
+                <figure class="gallery-item">
+                  <img
+                    class="thumb"
+                    src="imgs/gallery/WM-Gym.jpg"
+                    alt="woman-wearing-wavemaster-headphones-in-gym"
+                  />
+                </figure>
+
+                <figure class="gallery-item">
+                  <img
+                    class="thumb"
+                    src="imgs/gallery/WM-Outside.jpg"
+                    alt="Man-wears-wavemaster-headphones-in-the-street"
+                  />
+                </figure>
+
+                <figure class="gallery-item">
+                  <img
+                    class="thumb"
+                    src="imgs//gallery/WM-Coding.jpg"
+                    alt="Person-completes-tasks-while-wearing-wavemaster-headphones-on-hes-computer"
+                  />
+                </figure>
+
+                <figure class="gallery-item">
+                  <img
+                    class="thumb"
+                    src="imgs/gallery/WM-joy.jpg"
+                    alt="Woman-wearing-wavemaster-headphones-and-enjoys-music"
+                  />
+                </figure>
+
+                <figure class="gallery-item">
+                  <img
+                    class="thumb"
+                    src="imgs/gallery/Vibrance-Chip.jpg"
+                    alt="wavemaster-chip-vibrance-for-clear-sound"
+                  />
+                </figure>
+              </div>
+            </div>
+          </div>
+          <div class="testimonials container grid grid--3-cols">
+            <figure class="testimonial">
+              <img
+                src="imgs/wavemaster-customers/George-Philips.jpg"
+                alt="photo-of-george-philips"
+              />
+              <blockquote class="testimonial-text">
+                “I thought my headphones were good… then I tried Wavemaster.”
+              </blockquote>
+              <div class="testimonial-review">
+                <ion-icon
+                  name="people-outline"
+                  class="testimonial-icon"
+                ></ion-icon
+                ><span>⭐⭐⭐⭐⭐</span>
+              </div>
+              <p class="testimonial-author">&mdash; George Philips.</p>
+              <p class="testimonial-job">DJ & Music Producer</p>
+            </figure>
+
+            <figure class="testimonial">
+              <img
+                src="imgs/wavemaster-customers/Eleni-Madison.jpg"
+                alt="photo-of-eleni-madison"
+              />
+              <blockquote class="testimonial-text">
+                “I can hear details I never noticed before. It’s a whole new
+                level.”
+              </blockquote>
+              <div class="testimonial-review">
+                <ion-icon
+                  name="people-outline"
+                  class="testimonial-icon"
+                ></ion-icon
+                ><span>⭐⭐⭐⭐⭐</span>
+              </div>
+              <p class="testimonial-author">&mdash; Eleni Madison.</p>
+              <p class="testimonial-job">University Student</p>
+            </figure>
+
+            <figure class="testimonial">
+              <img
+                src="imgs/wavemaster-customers/Dimitris-Karamanis.jpg"
+                alt="photo-of-dimitris-karamanis"
+              />
+              <blockquote class="testimonial-text">
+                “A must-have for Zoom meetings — crystal-clear voice and zero
+                noise.”
+              </blockquote>
+              <div class="testimonial-review">
+                <ion-icon
+                  name="people-outline"
+                  class="testimonial-icon"
+                ></ion-icon
+                ><span>⭐⭐⭐⭐⭐</span>
+              </div>
+              <p class="testimonial-author">&mdash; Dimitris Karamanis.</p>
+              <p class="testimonial-job">Project Manager</p>
+            </figure>
+
+            <figure class="testimonial">
+              <img
+                src="imgs/wavemaster-customers/Caroline-Williams.jpg"
+                alt="photo-of-caroline-wiliams"
+              />
+              <blockquote class="testimonial-text">
+                “As a sound producer i tried many headphones but this is
+                something else.”
+              </blockquote>
+              <div class="testimonial-review">
+                <ion-icon
+                  name="people-outline"
+                  class="testimonial-icon"
+                ></ion-icon
+                ><span>⭐⭐⭐⭐⭐</span>
+              </div>
+              <p class="testimonial-author">&mdash; Caroline Wiliams.</p>
+              <p class="testimonial-job">Sound producer</p>
+            </figure>
+
+            <figure class="testimonial">
+              <img
+                src="imgs/wavemaster-customers/Peter-Jacobs.jpg"
+                alt="photo-of-peter-jacob"
+              />
+              <blockquote class="testimonial-text">
+                “I love music and with those headphones i felt like hearing my
+                favourite songs for the first time”
+              </blockquote>
+              <div class="testimonial-review">
+                <ion-icon
+                  name="people-outline"
+                  class="testimonial-icon"
+                ></ion-icon
+                ><span>⭐⭐⭐⭐⭐</span>
+              </div>
+              <p class="testimonial-author">&mdash; Peter jacobs</p>
+              <p class="testimonial-job">Music shop owner</p>
+            </figure>
+
+            <figure class="testimonial">
+              <img
+                src="imgs/wavemaster-customers/Katherine-peterson.jpg"
+                alt="photo-of-Katherine-Peterson"
+              />
+              <blockquote class="testimonial-text">
+                “I couldnt belive the quality it i use them everywhere
+                especially when i travel ”
+              </blockquote>
+              <div class="testimonial-review">
+                <ion-icon
+                  name="people-outline"
+                  class="testimonial-icon"
+                ></ion-icon
+                ><span>⭐⭐⭐⭐⭐</span>
+              </div>
+              <p class="testimonial-author">&mdash; Katherine Peterson.</p>
+              <p class="testimonial-job">Music enthusiasit</p>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <section id="cta" class="section-cta">
+        <div class="cta-img-box">
+          <img
+            src="imgs/product-image/WM-Green.jpg"
+            class="cta-img"
+            id="cta-main"
+            alt="wavemaster-hight-tech-headphones-green-color"
+          />
+        </div>
+        <div class="cta-text-box container">
+          <span class="subheading">Pricing</span>
+          <h2 class="heading-secondary">Enjoy crystal clear sound Today</h2>
+          <p class="cta-text">
+            Experience pure audio precision with the new Wavemaster Headphones,
+            powered by the revolutionary Vibrance Micro Chip. Whether you're
+            gaming, streaming, or working, immerse yourself in ultra-clear
+            sound, deep bass, and lightning-fast response time.
+          </p>
+          <div class="color-size">
+            <div class="color-col">
+              <p class="color-title">Colors and special editions:</p>
+              <div class="product-colors">
+                <div class="color"></div>
+                <div class="color color-green"></div>
+                <div class="color color-white"></div>
+                <div class="color color-blue"></div>
+                <div class="color color-red"></div>
+                <div class="color color-orange"></div>
+              </div>
+            </div>
+
+            <div class="size">
+              <p class="size-title">Size:</p>
+              <p class="size-description">One size</p>
+            </div>
+          </div>
+          <p class="list-title">📦 What’s in the Box?</p>
+          <ul class="list">
+            <li class="list-item">
+              <ion-icon name="checkmark-outline" class="list-icon"></ion-icon>
+              <span
+                >1x Pair of Wavemaster Headphones with Vibrance Micro
+                Sound</span
+              >
+            </li>
+            <li class="list-item">
+              <ion-icon name="checkmark-outline" class="list-icon"></ion-icon
+              ><span>1x Premium hard-shell travel case</span>
+            </li>
+            <li class="list-item">
+              <ion-icon name="checkmark-outline" class="list-icon"></ion-icon
+              ><span>1x USB-C charging cable</span>
+            </li>
+            <li class="list-item">
+              <ion-icon name="checkmark-outline" class="list-icon"></ion-icon
+              ><span>1x User manual (EN & GR)</span>
+            </li>
+            <li class="list-item">
+              <ion-icon name="checkmark-outline" class="list-icon"></ion-icon
+              ><span>3x Pairs of silicone ear tips (S, M, L)</span>
+            </li>
+          </ul>
+
+          <div class="price-cart">
+            <button class="btn btn--price" aria-label="price-button">
+              128.95€
+            </button>
+            <button class="btn btn--cart" aria-label="cart-button">
+              <span>Add to cart</span>
+              <ion-icon name="cart-outline" class="cta-icon"></ion-icon>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section id="features" class="section-features">
+        <div class="container text-center">
+          <span class="subheading">Features</span>
+          <h2 class="heading-secondary">
+            The Amazing features of wavemaster headphones
+          </h2>
+        </div>
+        <div class="container grid grid--3-cols">
+          <div class="feature">
+            <ion-icon name="volume-high" class="feature-icon"></ion-icon>
+            <p class="feature-title">What is Vibrance Micro Sound?</p>
+            <p class="feature-text">
+              The Vibrance Micro Sound chip is a custom-designed audio processor
+              integrated into Wavemaster headphones,
+            </p>
+          </div>
+
+          <div class="feature">
+            <ion-icon name="headset" class="feature-icon"></ion-icon>
+            <p class="feature-title">Headphones That Speak to You</p>
+            <p class="feature-text">
+              Wavemaster headphones are more than just devices they’re your
+              personal sound companion, with more then 5 different modes.
+            </p>
+          </div>
+
+          <div class="feature">
+            <ion-icon name="logo-web-component" class="feature-icon"></ion-icon>
+            <p class="feature-title">Smarter Sound with AI</p>
+            <p class="feature-text">
+              Your headphones use AI algorithms to detect the type of content
+              you’re listening to music, podcasts, movies, gaming — and adapt
+              sound processing automatically.
+            </p>
+          </div>
+
+          <div class="feature">
+            <ion-icon name="hardware-chip" class="feature-icon"></ion-icon>
+            <p class="feature-title">How the Chip Works</p>
+            <p class="feature-text">
+              The Vibrance Micro Sound chip combines advanced technologies like
+              real time audio cleanup and active frequncy balance..
+            </p>
+          </div>
+
+          <div class="feature">
+            <ion-icon name="cog" class="feature-icon"></ion-icon>
+            <p class="feature-title">Technology That’s Been Tested</p>
+            <p class="feature-text">
+              All the products by wavemaster have been tested and Results showed
+              an <strong>87% reduction</strong> in sound distortion and a
+              <strong>91% increase</strong> in perceived audio clarity.
+            </p>
+          </div>
+
+          <div class="feature">
+            <ion-icon name="earth" class="feature-icon"></ion-icon>
+            <p class="feature-title">Why Choose Wavemaster?</p>
+            <p class="feature-text">
+              We are a technology startup specializing in innovative sound
+              devices. If you're passionate about sound and ready to take your
+              audio experience to the next level, we're the choice for you.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!--Το id footer πάει στο newsletter-->
+    <footer id="footer" class="footer">
+      <div class="container grid grid--footer">
+        <div class="logo-col">
+          <a href="#" class="footer-logo">
+            <img src="imgs/Logo.png" class="logo" alt="wavemaster-logo" />
+          </a>
+          <address class="address">
+            <p class="address-info">35 Athens., 3nd Floor, Kifisia</p>
+            <p class="phone-num">
+              <a href="tel:691-234-756" class="footer-link">691-234-756</a>
+            </p>
+            <p>
+              <a href="mailto:improve@wavemaster.com" class="footer-link"
+                >improve@wavemaster.com</a
+              >
+            </p>
+          </address>
+        </div>
+
+        <div class="nav-col">
+          <p class="col-title">Info</p>
+          <nav class="footer-nav">
+            <ul class="footer-list">
+              <li><a href="#" class="footer-link">Home</a></li>
+              <li><a href="#" class="footer-link">Orders</a></li>
+              <li><a href="#" class="footer-link">About</a></li>
+              <li><a href="#" class="footer-link">Careers</a></li>
+              <li><a href="#" class="footer-link">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+
+        <div class="nav-col">
+          <nav class="footer-nav">
+            <p class="col-title">Resources</p>
+            <ul class="footer-list">
+              <li>
+                <a
+                  href="https://en.wikipedia.org/wiki/Sound"
+                  target="_blank"
+                  class="footer-link"
+                  >Sound System</a
+                >
+              </li>
+            </ul>
+          </nav>
+        </div>
+
+        <div class="nav-col">
+          <nav class="footer-nav">
+            <p class="col-title">Follow us</p>
+            <ul class="footer-list">
+              <li>
+                <a
+                  href="https://x.com/"
+                  class="footer-link"
+                  target="_blank"
+                  id="social-item"
+                  ><span>Twitter</span
+                  ><ion-icon name="logo-twitter" class="social-icon"></ion-icon
+                ></a>
+              </li>
+              <li>
+                <a
+                  href="https://www.facebook.com/?locale=el_GR"
+                  class="footer-link"
+                  id="social-item"
+                  target="_blank"
+                  ><span>Facebook</span
+                  ><ion-icon name="logo-facebook" class="social-icon"></ion-icon
+                ></a>
+              </li>
+              <li>
+                <a
+                  href="https://www.instagram.com/"
+                  class="footer-link"
+                  id="social-item"
+                  target="_blank"
+                >
+                  <span>Instagram</span
+                  ><ion-icon
+                    class="social-icon"
+                    name="logo-instagram"
+                  ></ion-icon>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+
+        <div class="news-col">
+          <p class="col-title">News letter</p>
+          <p class="news-text">
+            Subscribe for the latest social news and case studies
+          </p>
+          <form class="newsletter" name="sign-up" netlify>
+            <input type="email" required placeholder="me@example.com" />
+            <button class="btn-news" aria-label="Subscribe-button">
+              Subscribe
+            </button>
+          </form>
+        </div>
+      </div>
+      <div class="container footer-copy">
+        <span>&copy; Wavemaster by &mdash; Alex_Athanasiadis</span>
+        <span class="year">Year</span>
+      </div>
+    </footer>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
+
+<!-- Όταν κάνεις resize τις φωτογραφίες βλέπεις το μέγεθος της φωτογραφίας (render-size) και το κάνεις widthx2 heightx2 για scale-factor 2x instrictic size το deafult-size της φωτογραφίας σου -->

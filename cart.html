@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="css/general.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+    <link href="css/queries.css" rel="stylesheet" />
+    <link href="css/cart.css" rel="stylesheet" />
+
+    <!---Σε κωδικά js πρέπει να τηρείται όλο το περιεχόμενο του πχ εδώ σου χτύπαγε για το year αλλά αφού έβαλες το footer διορθώθηκε-->
+    <script defer src="js/script.js"></script>
+    <title>Your cart</title>
+  </head>
+  <body>
+    <header class="main-header">
+      <a href="index.html" class="logo-link">
+        <img
+          src="imgs/Logo.png"
+          alt="Wavemaster-logo"
+          class="logo"
+          alt="wavemaster-logo"
+        />
+      </a>
+      <nav class="main-nav">
+        <img src="imgs/Logo.png" alt="wavemaster-logo" class="logo-nav" />
+        <ul class="nav-list">
+          <li><a href="index.html#steps" class="nav-link">Easy Setup</a></li>
+          <li>
+            <a href="index.html#testimonials" class="nav-link">Testimonials</a>
+          </li>
+          <li><a href="index.html#features" class="nav-link">Features</a></li>
+
+          <li><a href="index.html#footer" class="nav-link">News Letter</a></li>
+          <li>
+            <a href="index.html#cta" class="nav-link main-nav-cta"
+              >Make it yours</a
+            >
+          </li>
+
+          <li>
+            <a href="cart.html" class="nav-link cart" target="_blank"
+              ><span>Your Cart</span
+              ><ion-icon name="cart" class="nav-icon"></ion-icon
+            ></a>
+          </li>
+        </ul>
+      </nav>
+      <button class="nav-btn" aria-label="navigation-button">
+        <ion-icon name="reorder-four-outline" class="menu-icon"></ion-icon>
+        <ion-icon name="close-outline" class="menu-icon"></ion-icon>
+      </button>
+    </header>
+
+    <section class="section-cart">
+      <div class="container text-center">
+        <h1 class="heading-cart">Your Cart</h1>
+        <p class="cart-text">
+          Check your recent orders and the total amount of money based on your
+          personal choices.
+        </p>
+      </div>
+      <div class="cart-container">
+        <div class="grid grid--2-cols grid--center-v">
+          <div class="img-box">
+            <div class="cart-flex">
+              <img src="imgs/product-image/WM-Green.jpg" class="product-img" />
+              <div class="flex-details">
+                <p class="product-title">Wavemaster Green</p>
+                <p class="product-description">Wavemaster brand choice</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="total-box">
+            <div class="counter">
+              <button class="cart-btn">
+                <ion-icon name="remove-outline" class="cart-icon"></ion-icon>
+              </button>
+
+              <span class="product-total">1</span>
+
+              <button class="cart-btn">
+                <ion-icon name="add-outline" class="cart-icon"></ion-icon>
+              </button>
+            </div>
+            <div class="price-remove">
+              <p class="price-product">128.00€</p>
+              <button class="cart-remove">
+                <ion-icon name="close-outline" class="remove-icon"></ion-icon>
+              </button>
+            </div>
+          </div>
+
+          <div class="img-box">
+            <div class="cart-flex">
+              <img src="imgs/product-image/WM-Orange.jpg" class="product-img" />
+              <div class="flex-details">
+                <p class="product-title">Wavemaster Orange</p>
+                <p class="product-description">Vibrance Choice Orange</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="total-box">
+            <div class="counter">
+              <button class="cart-btn">
+                <ion-icon name="remove-outline" class="cart-icon"></ion-icon>
+              </button>
+
+              <span class="product-total">1</span>
+
+              <button class="cart-btn">
+                <ion-icon name="add-outline" class="cart-icon"></ion-icon>
+              </button>
+            </div>
+            <div class="price-remove">
+              <p class="price-product">140.00€</p>
+              <button class="cart-remove">
+                <ion-icon name="close-outline" class="remove-icon"></ion-icon>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="total-details">
+          <div class="sub-flex">
+            <p class="sub-title">Subtotal</p>
+            <p class="sub-price">268.00€</p>
+          </div>
+
+          <div class="sub-flex">
+            <p class="sub-title">Shipping</p>
+            <p class="sub-price">20.00€</p>
+          </div>
+        </div>
+
+        <div class="total-price">
+          <p class="total">Total</p>
+          <p class="price"><span>Eu</span>288.00</p>
+        </div>
+
+        <button class="btn-checkout">
+          Checkout
+          <ion-icon name="arrow-forward-outline" class="btn-icon"></ion-icon>
+        </button>
+      </div>
+    </section>
+
+    <!--Το id footer πάει στο newsletter-->
+    <footer id="footer" class="footer">
+      <div class="container grid grid--footer">
+        <div class="logo-col">
+          <a href="#" class="footer-logo">
+            <img src="imgs/Logo.png" class="logo" alt="wavemaster-logo" />
+          </a>
+          <address class="address">
+            <p class="address-info">35 Athens., 3nd Floor, Kifisia</p>
+            <p class="phone-num">
+              <a href="tel:691-234-756" class="footer-link">691-234-756</a>
+            </p>
+            <p>
+              <a href="mailto:improve@wavemaster.com" class="footer-link"
+                >improve@wavemaster.com</a
+              >
+            </p>
+          </address>
+        </div>
+
+        <div class="nav-col">
+          <p class="col-title">Info</p>
+          <nav class="footer-nav">
+            <ul class="footer-list">
+              <li><a href="#" class="footer-link">Home</a></li>
+              <li><a href="#" class="footer-link">Orders</a></li>
+              <li><a href="#" class="footer-link">About</a></li>
+              <li><a href="#" class="footer-link">Careers</a></li>
+              <li><a href="#" class="footer-link">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+
+        <div class="nav-col">
+          <nav class="footer-nav">
+            <p class="col-title">Resources</p>
+            <ul class="footer-list">
+              <li>
+                <a
+                  href="https://en.wikipedia.org/wiki/Sound"
+                  target="_blank"
+                  class="footer-link"
+                  >Sound System</a
+                >
+              </li>
+            </ul>
+          </nav>
+        </div>
+
+        <div class="nav-col">
+          <nav class="footer-nav">
+            <p class="col-title">Follow us</p>
+            <ul class="footer-list">
+              <li>
+                <a
+                  href="https://x.com/"
+                  class="footer-link"
+                  target="_blank"
+                  id="social-item"
+                  ><span>Twitter</span
+                  ><ion-icon name="logo-twitter" class="social-icon"></ion-icon
+                ></a>
+              </li>
+              <li>
+                <a
+                  href="https://www.facebook.com/?locale=el_GR"
+                  class="footer-link"
+                  id="social-item"
+                  target="_blank"
+                  ><span>Facebook</span
+                  ><ion-icon name="logo-facebook" class="social-icon"></ion-icon
+                ></a>
+              </li>
+              <li>
+                <a
+                  href="https://www.instagram.com/"
+                  class="footer-link"
+                  id="social-item"
+                  target="_blank"
+                >
+                  <span>Instagram</span
+                  ><ion-icon
+                    class="social-icon"
+                    name="logo-instagram"
+                  ></ion-icon>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+
+        <div class="news-col">
+          <p class="col-title">News letter</p>
+          <p class="news-text">
+            Subscribe for the latest social news and case studies
+          </p>
+          <form class="newsletter">
+            <input type="email" required placeholder="me@example.com" />
+            <button class="btn-news" aria-label="Subscribe-button">
+              Subscribe
+            </button>
+          </form>
+        </div>
+      </div>
+      <div class="container footer-copy">
+        <span>&copy; Wavemaster by &mdash; Alex_Athanasiadis</span>
+        <span class="year">Year</span>
+      </div>
+    </footer>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>

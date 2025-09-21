@@ -1,0 +1,250 @@
+/* <-----------INGREDIENTS----------------------> 
+
+
+<----------TYPOGRAPHY-------->
+
+- Font sizes (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+2.COLOR-SYSTEM:
+
+Primary: #2b8a3e
+shade: #B04405,#C24700
+tints:#226e32, #37b24d, #69db7c, #b2f2bb
+accent: #FB6107, 
+greys: #444 #333 #9F9D9D 
+cart: #f1f3f5 #adb5bd #dee2e6  #e9ecef
+
+
+FONT-WEIGHT:
+Deafult:400
+medium:500
+semi-bold:600
+hight:700
+
+line-height:
+Deafult: 1
+small:1.05
+medium:1.2
+high:1.8
+
+Letter-spacing:
+<----------------->
+
+
+4.BORDER-RADIUS:
+Small:9px
+medium:11px
+big:50%
+
+5.SHADOWS:
+small:1.2rem 2.4rem
+medium: 1.6rem 3.2rem
+big:
+
+
+7.WHITE-SPACE:
+
+
+- Spacing system (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+
+
+extra-glass:
+From https://css.glass 
+background: rgba(255, 255, 255, 0.2);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+border: 1px solid rgba(255, 255, 255, 0.3);
+
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*:focus {
+  outline: none;
+  /* outline: 4px dotted #e67e22; */
+  /* outline-offset: 8px; */
+  box-shadow: 0 0 0 0.8rem rgba(230, 125, 34, 0.5);
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "Encode Sans", sans-serif;
+  line-height: 1;
+  font-weight: 400;
+  color: #444;
+  position: relative;
+  overflow-x: hidden;
+}
+
+strong {
+  font-weight: 500;
+}
+
+/*Headings*/
+
+.subheading {
+  display: block;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  color: #444;
+  letter-spacing: 0.75px;
+  font-weight: 700;
+  margin-bottom: 1.8rem;
+  color: #b04405;
+}
+
+.heading-primary {
+  font-size: 5rem;
+  color: #fff;
+  margin-bottom: 3.2rem;
+  line-height: 1.2;
+  letter-spacing: -0.5px;
+}
+
+.heading-secondary {
+  font-size: 3.6rem;
+  margin-bottom: 8rem;
+  color: #2b8a3e;
+  line-height: 1.2;
+  letter-spacing: -0.5px;
+}
+
+.cta-text-box .heading-secondary {
+  margin-bottom: 3.2rem;
+}
+
+.heading-teritary {
+  color: #226e32;
+  font-size: 3rem;
+  letter-spacing: -0.5px;
+  margin-bottom: 3.2rem;
+}
+
+.main-text-box .heading-teritary {
+  color: #37b24d;
+  font-weight: 700;
+}
+
+/*Reusable-classes*/
+
+.container {
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 0 3.2rem;
+}
+
+.grid {
+  display: grid;
+  column-gap: 6.4rem;
+  row-gap: 9.6rem;
+}
+
+.grid--center-v {
+  align-items: center;
+}
+
+.grid--2-cols {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid--3-cols {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.grid--4-cols {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.grid--5-cols {
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.grid--6-cols {
+  grid-template-columns: repeat(6, 1fr);
+}
+
+/*Δώσε σε όλα εκτός του τελευταίου grid-item margin-bottom:9.6rem*/
+.grid:not(:last-child) {
+  margin-bottom: 9.6rem;
+}
+
+/*Reusbale-classes*/
+
+/*Για να μην χαθέι η στοιχήση του icon σε hover και active και άλλα states*/
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.6rem;
+}
+
+.btn:link,
+.btn:visited {
+  font-weight: 600;
+  padding: 1.6rem 3.2rem;
+  color: #fff;
+  font-size: 2rem;
+  text-decoration: none;
+  border-top-left-radius: 2rem;
+  border-bottom-right-radius: 2rem;
+  transition: all 0.3s;
+}
+
+.btn-cta:link,
+.btn-cta:visited {
+  background-color: #226e32;
+}
+
+.btn-cta:hover,
+.btn-cta:active {
+  background-color: #37b24d;
+  box-shadow: 0 0 1.6rem 0.8rem #69db7c;
+}
+
+.btn-info:link,
+.btn-info:visited {
+  background-color: #fff;
+  color: #b04405;
+}
+
+.btn-info:hover,
+.btn-info:active {
+  color: #fb6107;
+  box-shadow: 0 0 1.2rem 0.6rem #fb6107;
+}
+/*Helper class*/
+
+.margin-right-sm {
+  margin-right: 1.8rem !important;
+}
+
+.text-center {
+  text-align: center !important;
+}
+
+.footer-link:link,
+.footer-link:visited {
+  font-size: 1.6rem;
+  text-decoration: none;
+  display: inline-block;
+  color: #ccc;
+  transition: all 0.3s;
+}
+
+.footer-link:hover,
+.footer-link:active {
+  color: #69db7c;
+}
