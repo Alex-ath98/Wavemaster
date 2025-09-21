@@ -644,6 +644,8 @@
   padding-bottom: 2px;
   margin-bottom: 3.2rem;
   border-bottom: 3px solid #fb6107;
+  font-size: 1.8rem;
+  color: #fff;
 }
 
 .newsletter input::placeholder {
